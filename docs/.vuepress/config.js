@@ -1,6 +1,7 @@
 module.exports = {
 	title: 'vue',
 	theme: "reco",
+	base: "/blog/",
 	themeConfig: {
 		nav: [
 			{ text: 'Home', link: '/' },
