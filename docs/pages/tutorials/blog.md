@@ -129,6 +129,10 @@ module.exports = {
 }
 ```
 - **步骤三**: 部署到git上
+> 踩坑记录： 
+> 1. 当运行`yarn deploy`时候可能会报这个错`digital envelope routines::unsupported`，这是因为 node.js V17版本中最近发布的OpenSSL3.0, 而OpenSSL3.0对允许算法和密钥大小增加了严格的限制，因此需要运行`export NODE_OPTIONS=--openssl-legacy-provider`后再运行`yarn deploy`，或者`nvm use <低版本node>`再运行`yarn deploy`
+
+
 ```js
 yarn deploy
 ```
