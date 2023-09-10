@@ -7,6 +7,10 @@ date: '2023-09-10'
 ---
 
 ## 新建vuepress项目  <font size=2>[快速上手](http://www.fenovice.com/doc/vuepress-next/guide/getting-started.html)</font>
+
+> 踩坑记录: 
+> 1. 这个步骤下你会初始化本地git仓库，后续当你想推代码的时候可能会出现permision denied，这是因为你没有把`ssh key`添加到你新建的远程仓库中，具体的你需要在本地生成`ssh key`，然后复制到你的远端git下。具体操作可参考:[Permission denied (publickey)解决方案](https://blog.csdn.net/weixin_44315471/article/details/132050649)
+
 - **步骤一**: 新建并进入一个新目录
 ```js
 mkdir vuepress-starter && cd uepress-starter
@@ -125,7 +129,6 @@ module.exports = {
 }
 ```
 - **步骤三**: 部署到git上
-
 ```js
 yarn deploy
 ```
