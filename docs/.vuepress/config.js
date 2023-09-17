@@ -57,6 +57,10 @@ module.exports = {
 					{
 						title: "数组的方法",
 						path: "/pages/jsLearning/array_methods.md"
+					},
+					{
+						title: "Set和Map数据结构",
+						path: "/pages/jsLearning/set_map.md"
 					}
 				]
 			},
