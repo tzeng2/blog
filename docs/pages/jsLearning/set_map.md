@@ -109,3 +109,12 @@ let obj = {
 obj[Symbol.iterator] = function (){return {next}};
 // for (let i of obj){console.log(i)}
 ```
+如果你知道`Generator`的话，其实最简单的方式是通过`Generator`实现:
+```js
+let obj = {};
+obj[Symbol.iterator] = function* () {
+    for (let i = 10; i <= 100; i+=10) {
+        yield i;
+    }
+}
+```
