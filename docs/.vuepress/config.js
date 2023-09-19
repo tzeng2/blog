@@ -55,8 +55,12 @@ module.exports = {
 						path: "/pages/jsLearning/throttle_debounce.md"
 					},
 					{
-						title: "数组的方法",
+						title: "数组的迭代方法",
 						path: "/pages/jsLearning/array_methods.md"
+					},
+					{
+						title: "数组的其它方法",
+						path: "/pages/jsLearning/array_methods_2.md"
 					},
 					{
 						title: "Set和Map数据结构",
