@@ -90,7 +90,7 @@ const customerB = new Customer(shop, 'Bob', (name, price) => {console.log(`${nam
 shop.priceRenewed();
 ```
 
-# Difference between Pub-Sub Pattern and Obs Pattern
+## Difference between Pub-Sub Pattern and Obs Pattern
 
 From the above introduction, we can get a glimpse to the little difference between Pub-Sub Pattern and Obs Pattern.
 
@@ -100,7 +100,7 @@ From the above introduction, we can get a glimpse to the little difference betwe
 
 
 
-# Reference
+## Reference
 - [Design Patterns: Observer Pattern in JavaScript]('https://medium.com/javascript-in-plain-english/design-patterns-observer-pattern-in-javascript-b9611827a876')
 - [Implementing the Observer Pattern in JavaScript]('https://medium.com/lftechnology/implementing-the-observer-pattern-in-javascript-198ccb62124d')
 - [https://medium.com/better-programming/observer-vs-pub-sub-pattern-50d3b27f838c]('https://medium.com/better-programming/observer-vs-pub-sub-pattern-50d3b27f838c')

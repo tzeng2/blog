@@ -4,8 +4,6 @@ author: 曾田
 date: '2023-09-10'
 ---
 
----
-
 ## 新建vuepress项目  <font size=2>[快速上手](http://www.fenovice.com/doc/vuepress-next/guide/getting-started.html)</font>
 
 > 踩坑记录: 

@@ -1,76 +1,91 @@
-module.exports = {
-	title: 'vue',
-	theme: "reco",
+
+import { defineUserConfig } from 'vuepress'
+import { recoTheme } from 'vuepress-theme-reco'
+
+export default defineUserConfig({
+	lang: 'zh-CN',
+	text: '你好， VuePress ！',
+	description: '这是我的第一个 VuePress 站点',
 	base: "/blog/",
-	themeConfig: {
-		nav: [
+	theme: recoTheme({
+		navbar: [
 			{ text: 'Home', link: '/' },
-			{ text: 'Guide', link: '/guide/' },
+			{ text: 'Guide', link: 'https://v2.vuepress.vuejs.org/zh' },
 			{ text: 'External', link: 'https://www.baidu.com' },
 			{
-				text: 'pagess',
+				text: 'pages',
 				ariaLabel: 'pages Menu',
-				items: [
+				children: [
 					{ text: 'algorithm', link: '/pages/algorithm/' },
-					{ text: 'Japanese', link: '/pages/japanese/' }
+					{ text: 'designPatterns', link: '/pages/designPatterns/' },
+					{ text: 'jsLearning', link: '/pages/jsLearning/' },
+					{ text: 'tutorials', link: '/pages/tutorials/' }
 				]
 			}
 		],
-		sidebar: [
-			{
-				title: '数据结构与算法',   // 必要的
-				path: '/pages/algorithm/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-				collapsable: true, // 可选的, 默认值是 true,
-				sidebarDepth: 1,    // 可选的, 默认值是 1
-				children: [
-					{
-						title: '字母异位词分组',
-						path: '/pages/algorithm/one.md',
-					},
-					{
-						title: '事件循环',
-						path: '/pages/algorithm/two.md',
-					}
-					
-				]
-			},
-			{
-				title: '教程系列',
-				path: '/pages/tutorials/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-				collapsable: true, // 可选的, 默认值是 true,
-				sidebarDepth: 1,    // 可选的, 默认值是 1
-				children: [
-					'/pages/tutorials/blog.md',
-					'/pages/tutorials/two.md'
-				]
-			},
-			{
-				title: 'js学习',
-				path: '/pages/jsLearning/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-				collapsable: true, // 可选的, 默认值是 true,
-				sidebarDepth: 1,    // 可选的, 默认值是 1
-				children: [
-					{
-						title: "防抖和节流",
-						path: "/pages/jsLearning/throttle_debounce.md"
-					},
-					{
-						title: "数组的迭代方法",
-						path: "/pages/jsLearning/array_methods.md"
-					},
-					{
-						title: "数组的其它方法",
-						path: "/pages/jsLearning/array_methods_2.md"
-					},
-					{
-						title: "Set和Map数据结构",
-						path: "/pages/jsLearning/set_map.md"
-					}
-				]
-			},
-		],
-		lastUpdated: 'Last Updated',
-		smoothScroll: true
+		series: {
+			'/': [
+				{
+					text: '数据结构与算法',
+					link: '/pages/algorithm/',
+					children: [
+						{
+							text: '字母异位词分组',
+							link: '/pages/algorithm/one.md',
+						},
+						{
+							text: '事件循环',
+							link: '/pages/algorithm/two.md',
+						}
 
-	}
-}
+					]
+				},
+				{
+					text: '教程系列',
+					link: '/pages/tutorials/',
+					children: [
+						'/pages/tutorials/blog.md',
+						'/pages/tutorials/two.md'
+					]
+				},
+				{
+					text: 'js学习',
+					link: '/pages/jsLearning/',
+					children: [
+						{
+							text: "防抖和节流",
+							link: "/pages/jsLearning/throttle_debounce.md"
+						},
+						{
+							text: "数组的迭代方法",
+							link: "/pages/jsLearning/array_methods.md"
+						},
+						{
+							text: "数组的其它方法",
+							link: "/pages/jsLearning/array_methods_2.md"
+						},
+						{
+							text: "Set和Map数据结构",
+							link: "/pages/jsLearning/set_map.md"
+						}
+					]
+				},
+				{
+					text: '设计模式',
+					link: '/pages/designPatterns/',
+					sidebarDepth: 1,    // 可选的, 默认值是 1
+					children: [
+						{
+							text: "发布订阅者模式vs观察者模式",
+							link: "/pages/designPatterns/PubSubPattern_ObsPattern.md"
+						}
+					]
+				},
+			]
+		}
+	}),
+})
+
+// note: vuepress 1 采用的是COMMON JS 语法
+
+
