@@ -67,7 +67,11 @@ export default defineUserConfig({
 						{
 							text: "Set和Map数据结构",
 							link: "/pages/jsLearning/set_map.md"
-						}
+						},
+						{
+							text: "面向对象的程序设计",
+							link: "/pages/jsLearning/professionalJS_6.md"
+						},
 					]
 				},
 				{
