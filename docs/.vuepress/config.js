@@ -32,10 +32,6 @@ export default defineUserConfig({
 						{
 							text: '字母异位词分组',
 							link: '/pages/algorithm/one.md',
-						},
-						{
-							text: '事件循环',
-							link: '/pages/algorithm/two.md',
 						}
 
 					]
@@ -45,7 +41,6 @@ export default defineUserConfig({
 					link: '/pages/tutorials/',
 					children: [
 						'/pages/tutorials/blog.md',
-						'/pages/tutorials/two.md'
 					]
 				},
 				{
@@ -80,9 +75,49 @@ export default defineUserConfig({
 					sidebarDepth: 1,    // 可选的, 默认值是 1
 					children: [
 						{
-							text: "发布订阅者模式vs观察者模式",
-							link: "/pages/designPatterns/PubSubPattern_ObsPattern.md"
-						}
+							text: "行为模式",
+							link: "/pages/designPatterns/BehavioralPatterns",
+							children: [
+								{
+									text: "发布订阅者模式vs观察者模式",
+									link: "/pages/designPatterns/BehavioralPatterns/PubSubPattern_ObsPattern.md"
+								},
+							]
+						},
+						{
+							text: "创建型模式",
+							link: "/pages/designPatterns/CreationalPatterns",
+							children: [
+								{
+									text: "工厂模式",
+									link: "/pages/designPatterns/CreationalPatterns/FactoryPattern.md"
+								},
+								{
+									text: "抽象工厂模式",
+									link: "/pages/designPatterns/CreationalPatterns/AbstractFactoryPattern.md"
+								},
+								{
+									text: "建造者模式",
+									link: "/pages/designPatterns/CreationalPatterns/Builder.md"
+								}
+							]
+						},
+						{
+							text: "结构型模式",
+							link: "/pages/designPatterns/StructuralPatterns",
+							children: [
+								{
+									text: "适配器模式",
+									link: "/pages/designPatterns/StructuralPatterns/Adapter.md"
+								},
+								{
+									text: "桥模式",
+									link: "/pages/designPatterns/StructuralPatterns/Bridge.md"
+								}
+							]
+						},
+						
+						
 					]
 				},
 			]
