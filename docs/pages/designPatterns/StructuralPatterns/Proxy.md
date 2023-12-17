@@ -1,5 +1,5 @@
 ---
-title: Composite
+title: Proxy
 author: 曾田
 date: '2023-12-17'
 navbar: true
