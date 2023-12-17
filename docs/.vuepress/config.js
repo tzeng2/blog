@@ -113,6 +113,10 @@ export default defineUserConfig({
 								{
 									text: "桥模式",
 									link: "/pages/designPatterns/StructuralPatterns/Bridge.md"
+								},
+								{
+									text: "代理模式",
+									link: "/pages/designPatterns/StructuralPatterns/Proxy.md"
 								}
 							]
 						},

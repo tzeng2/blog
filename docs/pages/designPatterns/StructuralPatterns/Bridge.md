@@ -18,7 +18,7 @@ There comes two parts with `Bridge`: `Abstraction` and `Implementation`. **`Abst
 
 
 
-## Real-life Example
+## Real-life Analogy
 <img src="../../../.vuepress/public/imgs/bridge03.png" width="500" height="600" />
 
 ## Pseudocode
