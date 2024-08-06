@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5f580be5","path":"/pages/designPatterns/BehavioralPatterns/","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"createdTime":1700994272000,"updatedTime":1700994272000,"contributors":[{"name":"tzeng2","email":"z_t004785@126.com","commits":1}]},"filePathRelative":"pages/designPatterns/BehavioralPatterns/README.md"}');export{e as data};
